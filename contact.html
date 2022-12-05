@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Details</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -17,9 +18,11 @@
 
     <form action="mailto:email@address.com" method="post" enctype="text/plain">
         <label>Your Name</label>
-        <input type="text" name="yourName" id=""><br>
+        <input type="text" name="yourName" id="" style="text-transform: capitalize;"><br>
+        <!--uses inline css to ensure each new word in name box starts with capital letter-->
         <label>Email Address</label>
-        <input type="email" name="yourEmail"> <br>
+        <input type="email" name="yourEmail" style="text-transform: lowercase;"> <br>
+        <!--uses inline css to ensure all text in email box is lowercase-->
         <label>Your Query</label><br>
         <textarea name="yourQuery" id="" cols="20" rows="5"></textarea><br>
         <input type="submit" name=""><br>
